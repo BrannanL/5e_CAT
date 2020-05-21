@@ -1,0 +1,789 @@
+<resources>
+    <string name="app_name">5e Turn Tracker</string>
+
+    // Strings for activity_main.xml
+    <string name="class_select_text">Select Character Class</string>
+
+    <string name="artificer">Artificer</string>
+    <string name="barbarian">Barbarian</string>
+    <string name="bard">Bard</string>
+    <string name="cleric">Cleric</string>
+    <string name="druid">Druid</string>
+    <string name="fighter">Fighter</string>
+    <string name="monk">Monk</string>
+    <string name="paladin">Paladin</string>
+    <string name="ranger">Ranger</string>
+    <string name="rogue">Rogue</string>
+    <string name="sorcerer">Sorcerer</string>
+    <string name="warlock">Warlock</string>
+    <string name="wizard">Wizard</string>
+
+    // Strings for race_select.xml
+    // Only the most common races have been implemented so far
+
+    <string name="race_select_text">Select Character Race</string>
+
+    <string name="aarakoska">Aarakoska</string>
+    <string name="aasimar">Aasimar</string>
+    <string name="aasimar_fallen">Aasimar (Fallen)</string>
+    <string name="aasimar_protecter">Aasimar (Protecter)</string>
+    <string name="aasimar_scourge">Aasimar (Scrouge)</string>
+    <string name="bugbear">Bugbear</string>
+    <string name="centaur">Centaur</string>
+    <string name="changeling">Changeling</string>
+    <string name="dragonborn">Dragonborn</string>
+    <string name="dwarf_duergar">Dwarf (Dreugar)</string>
+    <string name="dwarf_hill">Dwarf (Hill)</string>
+    <string name="dwarf_mark">Dwarf (Mark of Warding)</string>
+    <string name="dwarf_mountain">Dwarf (Mountain)</string>
+    <string name="elf_drow">Elf (Drow)</string>
+    <string name="elf_eladrin">Elf (Eladrin)</string>
+    <string name="elf_high">Elf (High)</string>
+    <string name="elf_mark">Elf (Mark of Shadow)</string>
+    <string name="elf_sea">Elf (Sea)</string>
+    <string name="elf_shadarkai">Elf (Shadar-kai)</string>
+    <string name="elf_wood">Elf (Wood)</string>
+    <string name="firbolg">Firbolg</string>
+    <string name="genasi_air">Genasi (Air)</string>
+    <string name="genasi_earth">Genasi (Earth)</string>
+    <string name="genasi_fire">Genasi (Fire)</string>
+    <string name="genasi_water">Genasi (Water)</string>
+    <string name="gith_githyanki">Gith (Githyanki)</string>
+    <string name="gith_githzerai">Gith (Githzerai)</string>
+    <string name="gnome_deep">Gnome (Deep)</string>
+    <string name="gnome_svirfneblin">Gnome (Deep/Svirfneblin)</string>
+    <string name="gnome_forest">Gnome (Forest)</string>
+    <string name="gnome_mark">Gnome (Mark of Scribing</string>
+    <string name="gnome_rock">Gnome (Rock)</string>
+    <string name="goblin">Goblin</string>
+    <string name="halfelf">Half-Elf</string>
+    <string name="halfelf_aquatic">Half-Elf (Aquatic Elf Descent)</string>
+    <string name="halfelf_drow">Half-Elf (Drow Descent)</string>
+    <string name="halfelf_mark_detection">Half-Elf (Mark of Detection)</string>
+    <string name="halfelf_mark_storm">Half-Elf (Mark of Storm)</string>
+    <string name="halfelf_moon_sun">Half-Elf (Moon or Sun Elf Descent</string>
+    <string name="halfelf_wood">Half-Elf (Wood Elf Descent</string>
+    <string name="halforc">Half-Orc</string>
+    <string name="halforc_mark_finding">Half-Orc (Mark of Finding)</string>
+    <string name="halfling_ghostwise">Halfling (Ghostwise)</string>
+    <string name="halfling_lightfoot">Halfling (Lightfoot)</string>
+    <string name="halfling_mark_healing">Halfling (Mark of Healing</string>
+    <string name="halfling_mark_hospitality">Halfling (Mark of Hospitality</string>
+    <string name="halfling_scout">Halfling (Scout)</string>
+    <string name="hobgoblin">Hobgoblin</string>
+    <string name="human">Human</string>
+    <string name="human_variant">Human (Variant)</string>
+    <string name="kalashtar">Kalashtar</string>
+    <string name="kenku">Kenku</string>
+    <string name="kobold">Kobold</string>
+    <string name="lizardfolk">Lizardfolk</string>
+    <string name="loxodon">Loxodon</string>
+    <string name="minotaur">Minotaur</string>
+    <string name="orc">Orc</string>
+    <string name="shifter_beasthide">Shifter (Beasthide)</string>
+    <string name="shifter_longtooth">Shifter (Longtooth)</string>
+    <string name="shifter_swiftstride">Shifter (Swiftstride)</string>
+    <string name="shifter_wildhunt">Shifter (Wildhunt)</string>
+    <string name="simic_hybrid">Simic Hybrid</string>
+    <string name="tabaxi">Tabaxi</string>
+    <string name="tiefling">Tiefling</string>
+    <string name="triton">Triton</string>
+    <string name="vedalken">Vedalken</string>
+    <string name="verdan">Verdan</string>
+    <string name="warforged">Warforged</string>
+    <string name="yanti">Yuan-ti Pureblood</string>
+
+    //Strings for subclass_select.xml
+    <string name="subclass_select_text">Select Character Subclass</string>
+
+    //Artificer subclasses
+    <string name="alchemist">Alchemist</string>
+    <string name="artillerist">Artillerist</string>
+    <string name="battle_smith">Battle Smith</string>
+
+    //Barbarian subclasses
+    <string name="ancestral_guardian">Ancestral Guardian</string>
+    <string name="battlerager">Battlerager</string>
+    <string name="berserker">Berserker</string>
+    <string name="storm_harald">Storm Harald</string>
+    <string name="totem_warrior">Totem Warrior</string>
+    <string name="zealot">Zealot</string>
+
+    //Bard subclasses
+    <string name="glamour">Glamour</string>
+    <string name="lore">Lore</string>
+    <string name="swords">Swords</string>
+    <string name="valor">Valor</string>
+    <string name="whispers">Whispers</string>
+
+    //Cleric subclasses
+    <string name="arcana">Arcana</string>
+    <string name="death">Death</string>
+    <string name="forge">Forge</string>
+    <string name="grave">Grave</string>
+    <string name="knowledge">Knowledge</string>
+    <string name="life">Life</string>
+    <string name="light">Light</string>
+    <string name="nature">Nature</string>
+    <string name="order">Order</string>
+    <string name="tempest">Tempest</string>
+    <string name="trickery">Trickery</string>
+    <string name="war">War</string>
+
+    //Druid subclasses
+    <string name="dreams">Dreams</string>
+    <string name="land">Land</string>
+    <string name="moon">Moon</string>
+    <string name="shepard">Shepard</string>
+    <string name="spores">Spores</string>
+
+    //Fighter subclasses
+    <string name="arcane_archer">Arcane Archer</string>
+    <string name="battle_master">Battle Master</string>
+    <string name="cavalier">Cavalier</string>
+    <string name="champion">Champion</string>
+    <string name="eldritch_knight">Eldritch Knight</string>
+    <string name="purple_dragon_knight">Purple Dragon Knight</string>
+    <string name="samurai">Samurai</string>
+
+    //Monk subclasses
+    <string name="drunken_master">Drunken Master</string>
+    <string name="four_elements">Four Elements</string>
+    <string name="kensei">Kensei</string>
+    <string name="long_death">Long Death</string>
+    <string name="open_hand">Open Hand</string>
+    <string name="shadow">Shadow</string>
+    <string name="sun_soul">Sun Soul</string>
+
+    //Paladin subclasses
+    <string name="ancients">Ancients</string>
+    <string name="conquest">Conquest</string>
+    <string name="crown">Crown</string>
+    <string name="devotion">Devotion</string>
+    <string name="oathbreaker">Oathbreaker</string>
+    <string name="redemption">Redemption</string>
+    <string name="vengeance">Vengeance</string>
+
+    //Ranger subclasses
+    <string name="beast_master">Beast Master</string>
+    <string name="gloom_stalker">Gloom Stalker</string>
+    <string name="horizon_walker">Horizon Walker</string>
+    <string name="hunter">Hunter</string>
+    <string name="monster_slayer">Monster Slayer</string>
+
+    //Rogue subclasses
+    <string name="arcane_trickster">Arcane Trickster</string>
+    <string name="assassin">Assassin</string>
+    <string name="inquisitive">Inquisitive</string>
+    <string name="mastermind">Mastermind</string>
+    <string name="scout">Scout</string>
+    <string name="swashbuckler">Swashbuckler</string>
+    <string name="thief">Thief</string>
+
+    //Sorcerer subclasses
+    <string name="divine_soul">Divine Soul</string>
+    <string name="draconic">Draconic</string>
+    <string name="sorc_shadow">Shadow</string>
+    <string name="storm">Storm</string>
+    <string name="wild">Wild</string>
+
+    //Warlock subclasses
+    <string name="archfey">Archfey</string>
+    <string name="celestial">Celestial</string>
+    <string name="fiend">Fiend</string>
+    <string name="great_old_one">Great Old One</string>
+    <string name="hexblade">Hexblade</string>
+    <string name="undying">Undying</string>
+
+    //Wizard subclasses
+    <string name="abjuration">Abjuration</string>
+    <string name="bladesinging">Bladesinging</string>
+    <string name="conjuration">Conjuration</string>
+    <string name="divination">Divination</string>
+    <string name="enchantment">Enchantment</string>
+    <string name="evocation">Evocation</string>
+    <string name="illusion">Illusion</string>
+    <string name="necromancy">Necromancy</string>
+    <string name="transmutation">Transmutation</string>
+    <string name="war_magic">War Magic</string>
+
+
+    //Strings for background_select.xml
+
+    <string name="acolyte">Acolyte</string>
+    <string name="anthropologist">Anthropologist</string>
+    <string name="archaeologist">Archaeologist</string>
+    <string name="azorius_functionary">Azorius Functionary</string>
+    <string name="boros_legionnaire">Boros Legionnaire</string>
+    <string name="celebrity_scion">Celebrity Adventurer\'s Scion</string>
+    <string name="charlatan">Charlatan</string>
+    <string name="city_watch">City Watch</string>
+    <string name="city_watch_investigator">City Watch (Investigator)</string>
+    <string name="clan_crafter">Clan Crafter</string>
+    <string name="cloistered_scholar">Cloistered Scholar</string>
+    <string name="courtier">Courtier</string>
+    <string name="criminal">Criminal</string>
+    <string name="criminal_spy">Criminal (Spy)</string>
+    <string name="dimir_operative">Dimir Operative</string>
+    <string name="entertainer">Entertainer</string>
+    <string name="entertainer_gladiator">Entertainer (Gladiator)</string>
+    <string name="faceless">Faceless</string>
+    <string name="faction_agent">Faction Agent</string>
+    <string name="failed_merchant">Failed Merchant</string>
+    <string name="far_traveler">Far Traveler</string>
+    <string name="fisher">Fisher</string>
+    <string name="folk_hero">Folk Hero</string>
+    <string name="gambler">Gambler</string>
+    <string name="golgari_agent">Golgari Agent</string>
+    <string name="gruul_anarch">Gruul Anarch</string>
+    <string name="guild_artisan">Guild Artisan</string>
+    <string name="guild_artisan_merchant">Guild Artisan (Guild Merchant)</string>
+    <string name="haunted_one">Haunted One</string>
+    <string name="hermit">Hermit</string>
+    <string name="house_agent">House Agent</string>
+    <string name="inheritor">Inheritor</string>
+    <string name="izzet_engineer">Izzet Engineer</string>
+    <string name="knight_of_order">Knight of the Order</string>
+    <string name="marine">Marine</string>
+    <string name="mercenary_veteran">Mercenary Veteran</string>
+    <string name="noble">Noble</string>
+    <string name="noble_knight">Noble (Knight)</string>
+    <string name="orzhov_rep">Orzhov Representative</string>
+    <string name="outlander">Outlander</string>
+    <string name="plaintiff">Plaintiff</string>
+    <string name="rakdos_cultist">Rakdos Cultist</string>
+    <string name="rival_intern">Rival Intern</string>
+    <string name="sage">Sage</string>
+    <string name="sailor">Sailor</string>
+    <string name="sailor_pirate">Sailor (Pirate)</string>
+    <string name="selesnya_initiate">Selesnya Initiate</string>
+    <string name="shipwright">Shipwright</string>
+    <string name="simic_scientist">Simic Scientist</string>
+    <string name="smuggler">Smuggler</string>
+    <string name="soldier">Soldier</string>
+    <string name="urban_bounty_hunter">Urban Bounty Hunter</string>
+    <string name="urchin">Urchin</string>
+    <string name="uthgardt_tribe_member">Uthgardt Tribe Member</string>
+    <string name="waterdhavian_noble">Waterdhavian Noble</string>
+
+    // Strings for feats.xml
+    <string name="feat_select_text">Select Character Feats</string>
+
+    <string name="aberrant_dragonmark">Aberrant Dragonmark</string>
+    <string name="actor">Actor</string>
+    <string name="alert">Alert</string>
+    <string name="athlete">Athlete</string>
+    <string name="bountiful_luck">Bountiful Luck</string>
+    <string name="charger">Charger</string>
+    <string name="crossbow_expert">Crossbow Expert</string>
+    <string name="defensive_duelist">Defensive Duelist</string>
+    <string name="dragon_fear">Dragon Fear</string>
+    <string name="dragon_hide">Dragon Hide</string>
+    <string name="drow_high_magic">Drow High Magic</string>
+    <string name="dual_wielder">Dual Wielder</string>
+    <string name="dungeon_delver">Dungeon Delver</string>
+    <string name="durable">Durable</string>
+    <string name="dwarven_fortitude">Dwarven Fortitude</string>
+    <string name="elemental_adept">Elemental Adept</string>
+    <string name="elven_accuracy">Elven Accuracy</string>
+    <string name="fade_away">Fade Away</string>
+    <string name="fey_teleportation">Fey Teleportation</string>
+    <string name="flames_phlegethos">Flames of Phlegethos</string>
+    <string name="grappler">Grappler</string>
+    <string name="great_weapon_master">Great Weapon Master</string>
+    <string name="healer">Healer</string>
+    <string name="heavily_armored">Heavily Armored</string>
+    <string name="heavy_armor_master">Heavy Armor Master</string>
+    <string name="infernal_constitution">Infernal Constitution</string>
+    <string name="inspiring_leader">Inspiring Leader</string>
+    <string name="keen_mind">Keen Mind</string>
+    <string name="lightly_armored">Lightly Armored</string>
+    <string name="linguist">Linguist</string>
+    <string name="lucky">Lucky</string>
+    <string name="mage_slayer">Mage Slayer</string>
+    <string name="magic_initiate">Magic Initiate</string>
+    <string name="martial_adept">Martial Adept</string>
+    <string name="medium_armor_master">Medium Armor Master</string>
+    <string name="mobile">Mobile</string>
+    <string name="moderately_armored">Moderately Armored</string>
+    <string name="mounted_combatant">Mounted Combatant</string>
+    <string name="observant">Observant</string>
+    <string name="orcish_fury">Orcish Fury</string>
+    <string name="polearm_master">Polearm Master</string>
+    <string name="prodigy">Prodigy</string>
+    <string name="resilient">Resilient</string>
+    <string name="revenant_blade">Revenant Blade</string>
+    <string name="ritual_caster">Ritual Caster</string>
+    <string name="savage_attacker">Savage Attacker</string>
+    <string name="second_chance">Second Chance</string>
+    <string name="sentinel">Sentinel</string>
+    <string name="sharpshooter">Sharpshooter</string>
+    <string name="shield_master">Shield Master</string>
+    <string name="skilled">Skilled</string>
+    <string name="skulker">Skulker</string>
+    <string name="spell_sniper">Spell Sniper</string>
+    <string name="squat_nimbleness">Squat Nimbleness</string>
+    <string name="svirfneblin_magic">Svirfneblin Magic</string>
+    <string name="tavern_brawler">Tavern Brawler</string>
+    <string name="tough">Tough</string>
+    <string name="war_caster">War Caster</string>
+    <string name="weapon_master">Weapon Master</string>
+    <string name="wood_elf_magic">Wood Elf Magic</string>
+
+    // Strings for spell_select.xml
+
+    <string name="spell_select_text">Select Character Spells</string>
+
+    // Cantrips
+    <string name="cantrip_text">Cantrips</string>
+    <string name="acid_splash">Acid Splash</string>
+    <string name="blade_ward">Blade Ward</string>
+    <string name="booming_blade">Booming Blade</string>
+    <string name="chill_touch">Chill Touch</string>
+    <string name="control_flames">Control Flames</string>
+    <string name="create_bonfire">Create Bonfire</string>
+    <string name="dancing_lights">Dancing Lights</string>
+    <string name="druidcraft">Druidcraft</string>
+    <string name="eldritch_blast">Eldritch Blast</string>
+    <string name="encode_thoughts">Encode Thoughts</string>
+    <string name="fire_bolt">Fire Bolt</string>
+    <string name="friends">Friends</string>
+    <string name="frostbite">Frostbite</string>
+    <string name="green_flame_blade">Green-Flame Blade</string>
+    <string name="guidance">Guidance</string>
+    <string name="gust">Gust</string>
+    <string name="infestation">Infestation</string>
+    <string name="spell_light">Light</string>
+    <string name="lightning_lure">Lightning Lure</string>
+    <string name="mage_hand">Mage Hand</string>
+    <string name="magic_stone">Magic Stone</string>
+    <string name="mending">Mending</string>
+    <string name="message">Message</string>
+    <string name="minor_illusion">Minor Illusion</string>
+    <string name="mold_earth">Mold Earth</string>
+    <string name="poison_spray">Poison Spray</string>
+    <string name="prestidigitation">Prestidigitation</string>
+    <string name="primal_savagery">Primal Savagery</string>
+    <string name="produce_flame">Produce Flame</string>
+    <string name="ray_of_frost">Ray of Frost</string>
+    <string name="resistance">Resistance</string>
+    <string name="sacred_flame">Sacred Flame</string>
+    <string name="shape_water">Shape Water</string>
+    <string name="shillelagh">Shillelagh</string>
+    <string name="shocking_grasp">Shocking Grasp</string>
+    <string name="spare_the_dying">Spare the Dying</string>
+    <string name="sword_burst">Sword Burst</string>
+    <string name="thaumaturgy">Thaumaturgy</string>
+    <string name="thorn_whip">Thorn Whip</string>
+    <string name="thunderclap">Thunderclap</string>
+    <string name="toll_the_dead">Toll the Dead</string>
+    <string name="true_strike">True Strike</string>
+    <string name="vicious_mockery">Vicious Mockery</string>
+    <string name="word_of_radiance">Word of Radiance</string>
+
+    // 1st Level Spells
+    <string name="first_level_spell_text">1st Level</string>
+    <string name="absorb_elements">Absorb Elements</string>
+    <string name="alarm">Alarm</string>
+    <string name="animal_friendship">Animal Friendship</string>
+    <string name="armor_of_agathys">Armor of Agathys</string>
+    <string name="arms_of_hadar">Arms of Hadar</string>
+    <string name="bane">Bane</string>
+    <string name="beast_bond">Beast Bond</string>
+    <string name="bless">Bless</string>
+    <string name="burning_hands">Burning Hands</string>
+    <string name="catapult">Catapult</string>
+    <string name="cause_fear">Cause Fear</string>
+    <string name="ceremony">Ceremony</string>
+    <string name="chaos_bolt">Chaos Bolt</string>
+    <string name="charm_person">Charm Person</string>
+    <string name="chromatic_orb">Chromatic Orb</string>
+    <string name="color_spray">Color Spray</string>
+    <string name="command">Command</string>
+    <string name="compelled_duel">Compelled Duel</string>
+    <string name="comprehend_languages">Comprehend Languages</string>
+    <string name="create_or_destroy_water">Create or Destroy Water</string>
+    <string name="cure_wounds">Cure Wounds</string>
+    <string name="detect_evil_and_good">Detect Evil and Good</string>
+    <string name="detect_magic">Detect Magic</string>
+    <string name="detect_poison_and_disease">Detect Poison and Disease</string>
+    <string name="disguise_self">Disguise Self</string>
+    <string name="dissonant_whispers">Dissonant Whispers</string>
+    <string name="distort_value">Distort Value</string>
+    <string name="divine_favor">Divine Favor</string>
+    <string name="earth_tremor">Earth Tremor</string>
+    <string name="ensnaring_strike">Ensnaring Strike</string>
+    <string name="entangle">Entangle</string>
+    <string name="expeditious_retreat">Expeditious Retreat</string>
+    <string name="faerie_fire">Faerie Fire</string>
+    <string name="false_life">False Life</string>
+    <string name="feather_fall">Feather Fall</string>
+    <string name="find_familiar">Find Familiar</string>
+    <string name="fog_clour">Fog Cloud</string>
+    <string name="gooddberry">Goodberry</string>
+    <string name="grease">Grease</string>
+    <string name="guiding_bolt">Guiding Bolt</string>
+    <string name="hall_of_thorns">Hall of Thorns</string>
+    <string name="healing_word">Healing Word</string>
+    <string name="hellish_rebuke">Hellish Rebuke</string>
+    <string name="heroism">Heroism</string>
+    <string name="hex">Hex</string>
+    <string name="hunters_mark">Hunter\'s Mark</string>
+    <string name="ice_knife">Ice Knife</string>
+    <string name="identify">Identify</string>
+    <string name="illusory_script">Illusory Script</string>
+    <string name="inflict_wounds">Inflict Wounds</string>
+    <string name="jims_magic_missile">Jim\'s Magic Missile</string>
+    <string name="jump">Jump</string>
+    <string name="longstrider">Longstrider</string>
+    <string name="mage_armor">Mage Armor</string>
+    <string name="magic_missile">Magic Missile</string>
+    <string name="protection_evil_good">Protection from Evil and Good</string>
+    <string name="purify_food_drink">Purify Good and Drink</string>
+    <string name="ray_of_sickness">Ray of Sickness</string>
+    <string name="sanctuary">Sanctuary</string>
+    <string name="searing_smite">Searing Smite</string>
+    <string name="shield">Shield</string>
+    <string name="shield_of_faith">Shield of Faith</string>
+    <string name="silent_image">Silent Image</string>
+    <string name="sleep">Sleep</string>
+    <string name="snare">Snare</string>
+    <string name="speak_with_animals">Speak with Animals</string>
+    <string name="tashas_laughter">Tasha\'s Hideous Laughter</string>
+    <string name="tensers_floating_disk">Tenser\'s Floating Disk</string>
+    <string name="thunderous_smite">Thunderous Smite</string>
+    <string name="thunderwave">Thunderwave</string>
+    <string name="unseen_servant">Unseen Servant</string>
+    <string name="witch_bolt">Witch Bolt</string>
+    <string name="wrathful_smite">Wrathful Smite</string>
+    <string name="zephyr_strike">Zephyr Strike</string>
+
+    // 2nd Level Spells
+    <string name="second_level_spells_text">2nd Level</string>
+    <string name="aganazzar">Aganazzar\'s Scorcher</string>
+    <string name="aid">Aid</string>
+    <string name="alter_self">Alter Self</string>
+    <string name="animal_messenger">Animal Messenger</string>
+    <string name="arcane_lock">Arcane Lock</string>
+    <string name="augury">Augury</string>
+    <string name="barkskin">Barkskin</string>
+    <string name="beast_sense">Beast Sense</string>
+    <string name="blindness_deafness">Blindness/Deafness</string>
+    <string name="blur">Blur</string>
+    <string name="branding_smite">Branding Smite</string>
+    <string name="calm_emotions">Calm Emotions</string>
+    <string name="cloud_of_daggers">Cloud of Daggers</string>
+    <string name="continual_flame">Continual Flame</string>
+    <string name="cordon_of_arrows">Cordon of Arrows</string>
+    <string name="crown_madness">Crown of Madness</string>
+    <string name="darkness">Darkness</string>
+    <string name="darkvision">Darkvision</string>
+    <string name="detect_thoughts">Detect Thoughts</string>
+    <string name="dragons_breath">Dragon\'s Breath</string>
+    <string name="dust_devil">Dust Devil</string>
+    <string name="earthbind">Earthbind</string>
+    <string name="enhance_ability">Enhance Ability</string>
+    <string name="enlarge_reduce">Enlarge/Reduce</string>
+    <string name="enthrall">Enthrall</string>
+    <string name="find_steed">Find Steed</string>
+    <string name="find_traps">Find Traps</string>
+    <string name="flame_blade">Flame Blade</string>
+    <string name="flaming_sphere">Flaming Sphere</string>
+    <string name="gentle_repose">Gentle Repose</string>
+    <string name="gift_of_gab">Gift of Gab</string>
+    <string name="gust_of_wind">Gust of Wind</string>
+    <string name="healing_spirit">Healing Spirit</string>
+    <string name="heat_metal">Heat Metal</string>
+    <string name="hold_person">Hold Person</string>
+    <string name="invisibility">Invisibility</string>
+    <string name="jims_glowing_coin">Jim\'s Glowing Coin</string>
+    <string name="knock">Knock</string>
+    <string name="lesser_restoration">Lesser Restoration</string>
+    <string name="levitate">Levitate</string>
+    <string name="locate_animals_plants">Locate Animals or Plants</string>
+    <string name="locate_object">Locate Object</string>
+    <string name="magic_mouth">Magic Mouth</string>
+    <string name="magic_weapon">Magic Weapon</string>
+    <string name="maximilians_earthen_grasp">Maximilian\'s Earthen Grasp</string>
+    <string name="melfs_acid_arrow">Melf\'s Acid Arrow</string>
+    <string name="mind_spike">Mind Spike</string>
+    <string name="mirror_image">Mirror Image</string>
+    <string name="misty_step">Misty Step</string>
+    <string name="moonbeam">Moonbeam</string>
+    <string name="nystuls_magic_aura">Nystul\'s Magic Aura</string>
+    <string name="pass_without_trace">Pass Without Trace</string>
+    <string name="phantasmal_force">Phantasmal Force</string>
+    <string name="prayer_of_healing">Prayer of Healing</string>
+    <string name="protection_from_poison">Protection from Poison</string>
+    <string name="pyrotechnics">Pyrotechnics</string>
+    <string name="ray_of_enfeeblement">Ray of Enfeeblement</string>
+    <string name="rope_trick">Rope Trick</string>
+    <string name="scorching_ray">Scorching Ray</string>
+    <string name="see_invisibility">See Invisibility</string>
+    <string name="shadow_blade">Shadow Blade</string>
+    <string name="shatter">Shatter</string>
+    <string name="silence">Silence</string>
+    <string name="skywrite">Skywrite</string>
+    <string name="snillocs_snowball_swarm">Snilloc\'s Snowball Swarm</string>
+    <string name="spider_climb">Spider Climb</string>
+    <string name="spike_growth">Spike Growth</string>
+    <string name="spiritual_weapon">Spiritual Weapon</string>
+    <string name="suggestion">Suggestion</string>
+    <string name="warding_bond">Warding Bond</string>
+    <string name="warding_wind">Warding Wind</string>
+    <string name="web">Web</string>
+    <string name="zone_of_truth">Zone of Truth</string>
+
+    //3rd Level Spells
+    <string name="animate_dead">Animate Dead</string>
+    <string name="aura_of_vitality">Aura of Vitality</string>
+    <string name="beacon_of_hope">Beacon of Hope</string>
+    <string name="bestow_curse">Bestow Curse</string>
+    <string name="blinding_smite">Blinding Smite</string>
+    <string name="blink">Blink</string>
+    <string name="call_lightning">Call Lightning</string>
+    <string name="catnap">Catnap</string>
+    <string name="clairvoyance">Clairvoyance</string>
+    <string name="conjure_animals">Conjure Animals</string>
+    <string name="conjure_barrage">Conjure Barrage</string>
+    <string name="counterspell">Counterspell</string>
+    <string name="create_food_water">Create Food and Water</string>
+    <string name="crusaders_mantle">Crusader\'s Mantle</string>
+    <string name="daylight">Daylight</string>
+    <string name="dispel_magic">Dispel Magic</string>
+    <string name="elemental_weapon">Elemental Weapon</string>
+    <string name="enemies_abound">Enemies Abound</string>
+    <string name="erupting_earth">Erupting Earth</string>
+    <string name="fast_friends">Fast Friends</string>
+    <string name="fear">Fear</string>
+    <string name="feign_death">Feign Death</string>
+    <string name="fireball">Fireball</string>
+    <string name="flame_arrows">Flame Arrows</string>
+    <string name="fly">Fly</string>
+    <string name="gaseous_form">Gaseous Form</string>
+    <string name="glyph_warding">Glyph of Warding</string>
+    <string name="haste">Haste</string>
+    <string name="hunger_hadar">Hunger of Hadar</string>
+    <string name="hypnotic_pattern">Hypnotic Pattern</string>
+    <string name="incite_greed">Incite Greed</string>
+    <string name="leomunds_tiny_hut">Leomund\'s Tiny Hut</string>
+    <string name="life_transference">Life Transference</string>
+    <string name="lightning_arrow">Lightning Arrow</string>
+    <string name="lightning_bolt">Lightning Bolt</string>
+    <string name="magic_circle">Magic Circle</string>
+    <string name="major_image">Major Image</string>
+    <string name="mass_healing_word">Mass Healing Word</string>
+    <string name="meld_into_stone">Meld Into Stone</string>
+    <string name="melfs_minute_meteors">Melf\'s Minute Meteors</string>
+    <string name="motivational_speech">Motivational Speech</string>
+    <string name="nondetection">Nondetection</string>
+    <string name="phantom_steed">Phantom Steed</string>
+    <string name="plant_growth">Plant Growth</string>
+    <string name="protection_from_energy">Protection From Energy</string>
+    <string name="remove_curse">Remove Curse</string>
+    <string name="revivify">Revivify</string>
+    <string name="sending">Sending</string>
+    <string name="sleet_storm">Sleet Storm</string>
+    <string name="slow">Slow</string>
+    <string name="speak_with_dead">Speak With Dead</string>
+    <string name="speak_with_plants">Speak With Plants</string>
+    <string name="spirit_guardians">Spirit Guardians</string>
+    <string name="stinking_cloud">Stinking Cloud</string>
+    <string name="summon_lesser_demons">Summon Lesser Demons</string>
+    <string name="thunder_step">Thunder Step</string>
+    <string name="tidal_wave">Tidal Wave</string>
+    <string name="tiny_servant">Tiny Servant</string>
+    <string name="tongues">Tongues</string>
+    <string name="vampiric_touch">Vampiric Touch</string>
+    <string name="wall_of_sand">Wall of Sand</string>
+    <string name="wall_of_water">Wall of Water</string>
+    <string name="water_breathing">Water Breathing</string>
+    <string name="water_walk">Water Walk</string>
+    <string name="wind_wall">Wind Wall</string>
+
+    //4th Level Spells
+    <string name="arcane_eye">Aracne Eye</string>
+    <string name="aura_of_life">Aura of Life</string>
+    <string name="aura_of_purity">Aura of Purity</string>
+    <string name="banishment">Banishment</string>
+    <string name="blight">Blight</string>
+    <string name="charm_monster">Charm Monster</string>
+    <string name="compulsion">Compulsion</string>
+    <string name="confusion">Confusion</string>
+    <string name="conjure_woodland_beings">Conjure Woodland Beings</string>
+    <string name="control_water">Control Water</string>
+    <string name="death_ward">Death Ward</string>
+    <string name="dimension_door">Dimension Door</string>
+    <string name="divination_spell">Divination</string>
+    <string name="dominate_beast">Dominate Beast</string>
+    <string name="elemental_bane">Elemental Bane</string>
+    <string name="evards_black_tentacles">Evard\'s Black Tentacles</string>
+    <string name="fire_shield">Fire Shield</string>
+    <string name="freedom_movement">Freedom of Movement</string>
+    <string name="giant_insect">Giant Insect</string>
+    <string name="grasping_vine">Grasping Vine</string>
+    <string name="greater_invisibility">Greater Invisibility</string>
+    <string name="guardian_faith">Guardian of Faith</string>
+    <string name="guardian_nature">Guarding of Nature</string>
+    <string name="ice_storm">Ice Storm</string>
+    <string name="leomunds_secret_chest">Leomund\'s Secret Chest</string>
+    <string name="locate_creature">Locate Creature</string>
+    <string name="mordenkainens_hound">Mordenkainen\'s Faithful Hound</string>
+    <string name="otilukes_sphere">Otilluke\'s Resilient Sphere</string>
+    <string name="phantasmal_killer">Phantasmal Killer</string>
+    <string name="polymorph">Polymorph</string>
+    <string name="shadow_of_moil">Shadow of Moil</string>
+    <string name="sickening_radiance">Sickening Radiance</string>
+    <string name="staggering_smite">Staggering Smite</string>
+    <string name="stone_shape">Stone Shape</string>
+    <string name="stoneskin">Stoneskin</string>
+    <string name="storm_sphere">Storm Sphere</string>
+    <string name="summon_greater_demon">Summon Greater Demon</string>
+    <string name="vitriolic_sphere">Vitriolic Sphere</string>
+    <string name="wall_of_fire">Wall of Fire</string>
+    <string name="watery_sphere">Watery Sphere</string>
+
+
+    //5th Level Spells
+    <string name="animate_objects">Animate Objects</string>
+    <string name="antilife_shell">Antilife Shell</string>
+    <string name="banishing_smite">Banishing Smite</string>
+    <string name="bigbys_hand">Bigby\'s Hand</string>
+    <string name="circle_of_power">Circle of Power</string>
+    <string name="cloudkill">Cloudkill</string>
+    <string name="cone_of_cold">Cold of Cold</string>
+    <string name="conjure_volley">Conjure Volley</string>
+    <string name="contagion">Contagion</string>
+    <string name="control_winds">Control Winds</string>
+    <string name="danse_macabre">Danse Macabre</string>
+    <string name="dawn">Dawn</string>
+    <string name="destructive_wave">Destructive Wave</string>
+    <string name="dispel_evil_good">Dispel Evil and Good</string>
+    <string name="dominate_person">Dominate Person</string>
+    <string name="enervation">Enervation</string>
+    <string name="far_step">Far Step</string>
+    <string name="flame_strike">Flame Strike</string>
+    <string name="greater_restoration">Greater Restoration</string>
+    <string name="hold_monster">Hold Monster</string>
+    <string name="holy_weapon">Holy Weapon</string>
+    <string name="immolation">Immolation</string>
+    <string name="insect_plague">Insect Plague</string>
+    <string name="maelstrom">Maelstrom</string>
+    <string name="mass_cure_wounds">Mass Cure Wounds</string>
+    <string name="mislead">Mislead</string>
+    <string name="modify_memory">Modify Memory</string>
+    <string name="negative_energy_flood">Negative Energy Flood</string>
+    <string name="passwall">Passwall</string>
+    <string name="rarys_telepathic_bond">Rary\'s Telepathic Bond</string>
+    <string name="seeming">Seeming</string>
+    <string name="skill_empowerment">Skill Empowerment</string>
+    <string name="steel_wind_strike">Skill Wind Strike</string>
+    <string name="swift_quiver">Swift Quiver</string>
+    <string name="synaptic_static">Synaptic Static</string>
+    -<string name="telekinesis">Telekinesis</string>
+    <string name="transmute_rock">Transmute Rock</string>
+    <string name="tree_stride">Tree Stride</string>
+    <string name="wall_of_force">Wall of Force</string>
+    <string name="wall_of_light">Wall of Light</string>
+    <string name="wall_of_stone">Wall of Stone</string>
+    <string name="wrath_of_nature">Wrath of Nature</string>
+
+
+    // 6th Level Spells
+
+    <string name="arcane_gate">Arcane Gate</string>
+    <string name="blade_barrier">Blade Barrier</string>
+    <string name="bones_of_earth">Bones of the Earth</string>
+    <string name="chain_lightning">Chain Lightning</string>
+    <string name="circle_of_death">Circle of Death</string>
+    <string name="disintegrate">Disintegrate</string>
+    <string name="eyebite">Eyebite</string>
+    <string name="flesh_to_stone">Flesh to Stone</string>
+    <string name="globe_of_invulnerability">Globe of Invulnerability</string>
+    <string name="harm">Harm</string>
+    <string name="heal">Heal</string>
+    <string name="investiture_of_flame">Investiture of Flame</string>
+    <string name="investiture_of_ice">Investiture of Ice</string>
+    <string name="investiture_of_stone">Investiture of Stone</string>
+    <string name="investiture_of_wind">Investiture of Wind</string>
+    <string name="mass_suggestion">Mass Suggestion</string>
+    <string name="mental_prison">Mental Prison</string>
+    <string name="move_earth">Move Earth</string>
+    <string name="otilukes_freezing_sphere">Otiluke\'s Freezing Sphere</string>
+    <string name="ottos_irresistible_dance">Otto\'s Irresistible Dance</string>
+    <string name="primordial_ward">Primordial Ward</string>
+    <string name="programmed_illusion">Programmed Illusion</string>
+    <string name="scatter">Scatter</string>
+    <string name="soul_cage">Soul Cage</string>
+    <string name="sunbeam">Sunbeam</string>
+    <string name="tensers_transformation">Tenser\'s Transformation</string>
+    <string name="transport_via_plants">Transport Via Plants</string>
+    <string name="true_seeing">True Seeing</string>
+    <string name="wall_of_ice">Wall of Ice</string>
+    <string name="wall_of_thorns">Wall of Thorns</string>
+    <string name="wind_walk">Wind Walk</string>
+    <string name="word_of_recall">Word of Recall</string>
+
+
+    //7th Level Spells
+
+    <string name="crown_of_stars">Crown of Stars</string>
+    <string name="delayed_blast_fireball">Delayed Blast Fireball</string>
+    <string name="divine_word">Divine Word</string>
+    <string name="etherealness">Etherealness</string>
+    <string name="finger_of_death">Finger of Death</string>
+    <string name="fire_storm">Fire Storm</string>
+    <string name="forcecage">Forcecage</string>
+    <string name="mordenkainens_sword">Mordenkainen\'s Sword</string>
+    <string name="plane_shift">Plane Shift</string>
+    <string name="power_word_pain">Power Word Pain</string>
+    <string name="prismatic_spray">Prismatic Spray</string>
+    <string name="project_image">Project Image</string>
+    <string name="reverse_gravity">Reverse Gravity</string>
+    <string name="sequester">Sequester</string>
+    <string name="teleport">Teleport</string>
+    <string name="whirlwind">Whirlwind</string>
+
+
+    //8th Level Spells
+
+    <string name="abidalzims_horrid_wilting">Abi-Dalzim\'s Horrid Wilting</string>
+    <string name="animal_shapes">Animal Shapes</string>
+    <string name="antimagic_field">Antimagic Field</string>
+    <string name="demiplane">Demiplane</string>
+    <string name="dominate_monster">Dominate Monster</string>
+    <string name="earthquake">Earthquake</string>
+    <string name="feeblemind">Feeblemind</string>
+    <string name="glibness">Glibness</string>
+    <string name="holy_aura">Holy Aura</string>
+    <string name="illusory_dragon">Illusory Dragon</string>
+    <string name="incendiary_cloud">Incendiary Cloud</string>
+    <string name="maddening_darkness">Maddening Darkness</string>
+    <string name="maze">Maze</string>
+    <string name="mind_blank">Mind Blank</string>
+    <string name="power_word_stun">Power Word Stun</string>
+    <string name="sunburst">Sunburst</string>
+    <string name="telepathy">Telepathy</string>
+
+
+    //9th Level Spells
+
+    <string name="gate">Gate</string>
+    <string name="invulnerability">Invulnerability</string>
+    <string name="mass_heal">Mass Heal</string>
+    <string name="mass_polymorph">Mass Polymorph</string>
+    <string name="meteor_swarm">Meteor Swarm</string>
+    <string name="power_word_heal">Power Word Heal</string>
+    <string name="power_word_kill">Power Word Kill</string>
+    <string name="prismatic_wall">Prismatic Wall</string>
+    <string name="psychic_scream">Psychic Scream</string>
+    <string name="shapechange">Shapechange</string>
+    <string name="storm_of_vengeance">Storm of Vengeance</string>
+    <string name="time_stop">Time Stop</string>
+    <string name="true_polymorph">True Polymorph</string>
+    <string name="weird">Weird</string>
+    <string name="wish">Wish</string>
+
+
+
+</resources>
