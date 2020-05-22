@@ -1,3 +1,9 @@
+/*
+    raceSelect is the launch activity. On launch the user's character is initialized
+    Once a button is selected, the Race associated with that button is set as the character's Race
+    the character is then passed on to the next activity, where another piece is added
+    This process continues through the selection screens, until a full character is formed
+ */
 package com.example.a5eturntracker;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -6,6 +12,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+
+import com.example.a5eturntracker.MainActivity;
 
 import java.util.ArrayList;
 import java.util.List;

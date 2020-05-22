@@ -106,6 +106,10 @@ public class MainActivity extends AppCompatActivity {
         return p;
     }
     static List<Ability> createSpellSelectionList() {
+        /*
+            Looking back, I'm sure there was a better way to do this. But for now I'll leave as is
+            Will look at improving how the data is initialized, stored, and used after I have a working version
+         */
         List<Ability> abilityList = null;
 
         Ability acidSplash = null;
@@ -6311,7 +6315,454 @@ public class MainActivity extends AppCompatActivity {
 
         warlockSubClassList.add(fiend);
 
+        SubClass greatOldOne = null;
+        greatOldOne.name = "Great Old One";
+        greatOldOne.parentName = "Warlock";
+
+        Ability awakenedMind = null;
+        awakenedMind.name = "Awakened Mind";
+        awakenedMind.actionType = "Free";
+        awakenedMind.description = "Starting at 1st level, your alien knowledge gives you the ability to touch the minds of other creatures. You can communicate telepathically with any creature you can see within 30 feet of you. You don't need to share a language with the creature for it to understand your telepathic utterances, but the creature must be able to understand at least one language.";
+        awakenedMind.recharge = "None";
+        awakenedMind.spellLevel = 0;
+        awakenedMind.requiredLevel = 1;
+        greatOldOne.subclassAbilityList.add(awakenedMind);
+
+        Ability entropicWard = null;
+        entropicWard.name = "Entropic Ward";
+        entropicWard.actionType = "Reaction";
+        entropicWard.description = "At 6th level, you learn to magically ward yourself against attack and to turn an enemy's failed strike into good luck for yourself. When a creature makes an attack roll against you, you can use your reaction to impose disadvantage on that roll. If the attack misses you, your next attack roll against the creature has advantage if you make it before the end of your next turn.";
+        entropicWard.recharge = "Short";
+        entropicWard.spellLevel = 0;
+        entropicWard.requiredLevel = 6;
+        greatOldOne.subclassAbilityList.add(entropicWard);
+
+        Ability createThrall = null;
+        createThrall.name = "Create Thrall";
+        createThrall.actionType = "Action";
+        createThrall.description = "At 14th level, you gain the ability to infect a humanoid's mind with the alien magic of your patron. You can use your action to touch an incapacitated humanoid. That creature is then charmed by you until a remove curse spell is cast on it, the charmed condition is removed from it, or you use this feature again.";
+        createThrall.recharge = "None";
+        createThrall.spellLevel = 0;
+        createThrall.requiredLevel = 14;
+        greatOldOne.subclassAbilityList.add(createThrall);
+
+        warlockSubClassList.add(greatOldOne);
+
+        SubClass hexblade = null;
+        hexblade.name = "Hexblade";
+        hexblade.parentName = "Warlock";
+
+        Ability hexbladesCurse = null;
+        hexbladesCurse.name = "Hexblade\'s Curse";
+        hexbladesCurse.actionType = "Bonus";
+        hexbladesCurse.description = "Starting at 1st level, you gain the ability to place a baleful curse on someone. As a bonus action, choose one creature you can see within 30 feet of you. The target is cursed for 1 minute. The curse ends early if the target dies, you die, or you are incapacitated.";
+        hexbladesCurse.recharge = "Short";
+        hexbladesCurse.spellLevel = 0;
+        hexbladesCurse.requiredLevel = 1;
+        hexblade.subclassAbilityList.add(hexbladesCurse);
+
+        Ability accursedSpecter = null;
+        accursedSpecter.name = "Accursed Specter";
+        accursedSpecter.actionType = "Free";
+        accursedSpecter.description = "Starting at 6th level, you can curse the soul of a person you slay, temporarily binding it to your service. When you slay a humanoid, you can cause its spirit to rise from its corpse as a specter, the statistics for which are in the Monster Manual. When the specter appears, it gains temporary hit points equal to half your warlock level. Roll initiative for the specter, which has its own turns. It obeys your verbal commands, and it gains a special bonus to its attack rolls equal to your Charisma modifier (minimum of +0).";
+        accursedSpecter.recharge = "Long";
+        accursedSpecter.spellLevel = 0;
+        accursedSpecter.requiredLevel = 6;
+        hexblade.subclassAbilityList.add(accursedSpecter);
+
+        Ability armorOfHexes = null;
+        armorOfHexes.name = "Armor of Hexes";
+        armorOfHexes.actionType = "Reaction";
+        armorOfHexes.description = "At 10th level, your hex grows more powerful. If the target cursed by your Hexblade's Curse hits you with an attack roll, you can use your reaction to roll a d6. On a 4 or higher, the attack instead misses you, regardless of its roll.";
+        armorOfHexes.recharge = "Turn";
+        armorOfHexes.spellLevel = 0;
+        armorOfHexes.requiredLevel = 10;
+        hexblade.subclassAbilityList.add(armorOfHexes);
+
+        Ability masterOfHexes = null;
+        masterOfHexes.name = "Master of Hexes";
+        masterOfHexes.actionType = "Free";
+        masterOfHexes.description = "Starting at 14th level, you can spread your Hexblade's Curse from a slain creature to another creature. When the creature cursed by your Hexblade's Curse dies, you can apply the curse to a different creature you can see within 30 feet of you, provided you aren't incapacitated. When you apply the curse in this way, you don't regain hit points from the death of the previously cursed creature.";
+        masterOfHexes.recharge = "None";
+        masterOfHexes.spellLevel = 0;
+        masterOfHexes.requiredLevel = 14;
+        hexblade.subclassAbilityList.add(masterOfHexes);
+
+        warlockSubClassList.add(hexblade);
+
+        SubClass undying = null;
+        undying.name = "Undying";
+        undying.parentName = "Warlock";
+
+        Ability defyDeath = null;
+        defyDeath.name = "Defy Death";
+        defyDeath.actionType = "Free";
+        defyDeath.description = "Starting at 6th level, you can give yourself vitality when you cheat death or when you help someone else cheat it. You can regain hit points equal to 1d8 + your Constitution modifier (minimum of 1 hit point) when you succeed on a death saving throw or when you stabilize a creature with spare the dying.";
+        defyDeath.recharge = "Short";
+        defyDeath.spellLevel = 0;
+        defyDeath.requiredLevel = 6;
+        undying.subclassAbilityList.add(defyDeath);
+
+        Ability indestructibleLife = null;
+        indestructibleLife.name = "Indestructible Life";
+        indestructibleLife.actionType = "Bonus";
+        indestructibleLife.description = "When you reach 14th level, you partake some of the true secrets of the Undying. On your turn, you can use a bonus action to regain hit points equal to 1d8 + your warlock level. Additionally, if you put a severed body part of yours back in place when you use this feature, the part reattaches.";
+        indestructibleLife.recharge = "Short";
+        indestructibleLife.spellLevel = 0;
+        indestructibleLife.requiredLevel = 14;
+        undying.subclassAbilityList.add(indestructibleLife);
+
+        warlockSubClassList.add(undying);
+
+        return warlockSubClassList;
+
 
     }
+    static List<SubClass> createWizardSubClassList() {
+        List<SubClass> wizardSubClassList = null;
 
+        SubClass abjuration = null;
+        abjuration.name = "Abjuration";
+        abjuration.parentName = "Wizard";
+
+        Ability arcaneWind = null;
+        arcaneWind.name = "Arcane Wind";
+        arcaneWind.actionType = "Free";
+        arcaneWind.description = "Starting at 2nd level, you can weave magic around yourself for protection. When you cast an abjuration spell of 1st level or higher, you can simultaneously use a strand of the spell's magic to create a magical ward on yourself that lasts until you finish a long rest. The ward has hit points equal to twice your wizard level + your Intelligence modifier. Whenever you take damage, the ward takes the damage instead. If this damage reduces the ward to 0 hit points, you take any remaining damage.";
+        arcaneWind.recharge = "Long";
+        arcaneWind.spellLevel = 0;
+        arcaneWind.requiredLevel = 2;
+        abjuration.subclassAbilityList.add(arcaneWind);
+
+        Ability projectedWard = null;
+        projectedWard.name = "Projected Ward";
+        projectedWard.actionType = "Reaction";
+        projectedWard.description = "Starting at 6th level, when a creature that you can see within 30 feet of you takes damage, you can use your reaction to cause your Arcane Ward to absorb that damage. If this damage reduces the ward to 0 hit points, the warded creature takes any remaining damage.";
+        projectedWard.recharge = "Turn";
+        projectedWard.spellLevel = 0;
+        projectedWard.requiredLevel = 6;
+        abjuration.subclassAbilityList.add(projectedWard);
+
+        Ability improvedAbjuration = null;
+        improvedAbjuration.name = "Improved Abjuration";
+        improvedAbjuration.actionType = "Free";
+        improvedAbjuration.description = "Beginning at 10th level, when you cast an abjuration spell that requires you to make an ability check as a part of casting that spell (as in counterspell and dispel magic), you add your proficiency bonus to that ability check.";
+        improvedAbjuration.recharge = "None";
+        improvedAbjuration.spellLevel = 0;
+        improvedAbjuration.requiredLevel = 10;
+        abjuration.subclassAbilityList.add(improvedAbjuration);
+
+        wizardSubClassList.add(abjuration);
+
+        SubClass bladesinging = null;
+        bladesinging.name = "Bladesinging";
+        bladesinging.parentName = "Wizard";
+
+        Ability bladesong = null;
+        bladesong.name = "Bladesong";
+        bladesong.actionType = "Bonus";
+        bladesong.description = "You can use a bonus action to start the Bladesong, which lasts for 1 minute. It ends early if you are incapacitated, if you don medium or heavy armor or a shield, or if you use two hands to make an attack with a weapon. You can also dismiss Bladesong at any time you choose (no action required).";
+        bladesong.recharge = "None";
+        bladesong.spellLevel = 0;
+        bladesong.requiredLevel = 2;
+        bladesinging.subclassAbilityList.add(bladesong);
+
+        Ability extraAttack = null;
+        extraAttack.name = "Extra Attack";
+        extraAttack.actionType = "Free";
+        extraAttack.description = "Starting at 6th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.";
+        extraAttack.recharge = "None";
+        extraAttack.spellLevel = 0;
+        extraAttack.requiredLevel = 6;
+        bladesinging.subclassAbilityList.add(extraAttack);
+
+        Ability songOfDefense = null;
+        songOfDefense.name = "Song of Defense";
+        songOfDefense.actionType = "Reaction";
+        songOfDefense.description = "Beginning at 10th level, you can direct your magic to absorb damage while your bladesong is active. When you take damage, you can use your reaction to expend one spell slot and reduce that damage to you by an amount equal to five times the spell's slot level.";
+        songOfDefense.recharge = "None";
+        songOfDefense.spellLevel = 0;
+        songOfDefense.requiredLevel = 10;
+        bladesinging.subclassAbilityList.add(songOfDefense);
+
+        wizardSubClassList.add(bladesinging);
+
+        SubClass chronurgy = null;
+        chronurgy.name = "Chronurgy";
+        chronurgy.parentName = "Wizard";
+
+        Ability chronalShift = null;
+        chronalShift.name = "Chronal Shift";
+        chronalShift.actionType = "Reaction";
+        chronalShift.description = "You can magically exert limited control over the flow of time around a creature. As a reaction, after you or a creature you can see within 30 feet of you makes an attack roll, an ability check, or a saving throw, you can force the creature to reroll. You make this decision after you see whether the roll succeeds or fails. The target must use the result of the second roll.";
+        chronalShift.recharge = "None";
+        chronalShift.spellLevel = 0;
+        chronalShift.requiredLevel = 2;
+        chronurgy.subclassAbilityList.add(chronalShift);
+
+        Ability momentaryStasis = null;
+        momentaryStasis.name = "Momentary Stasis";
+        momentaryStasis.actionType = "Action";
+        momentaryStasis.description = "As an action, you can magically force a Large or smaller creature you can see within 60 feet of you to make a Constitution saving throw against your spell save DC. Unless the saving throw is a success, the creature is encased in a field of magical energy until the end of your next turn or until the creature takes any damage. While encased in this way, the creature is incapacitated and has a speed of 0.";
+        momentaryStasis.recharge = "None";
+        momentaryStasis.spellLevel = 0;
+        momentaryStasis.requiredLevel = 6;
+        chronurgy.subclassAbilityList.add(momentaryStasis);
+
+        Ability convergentFuture = null;
+        convergentFuture.name = "Convergent Future";
+        convergentFuture.actionType = "Reaction";
+        convergentFuture.description = "You can peer through possible futures and magically pull one of them into events around you, ensuring a particular outcome. When you or a creature you can see within 60 feet of you makes an attack roll, an ability check, or a saving throw, you can use your reaction to ignore the die roll and decide whether the number rolled is the minimum needed to succeed or one less than that number (your choice).";
+        convergentFuture.recharge = "None";
+        convergentFuture.spellLevel = 0;
+        convergentFuture.requiredLevel = 14;
+        chronurgy.subclassAbilityList.add(convergentFuture);
+
+        wizardSubClassList.add(chronurgy);
+
+        SubClass conjuration = null;
+        conjuration.name = "Conjuration";
+        conjuration.parentName = "Wizard";
+
+        Ability minorConjuration = null;
+        minorConjuration.name = "Minor Conjuration";
+        minorConjuration.actionType = "Action";
+        minorConjuration.description = "Starting at 2nd level when you select this school, you can use your action to conjure up an inanimate object in your hand or on the ground in an unoccupied space that you can see within 10 feet of you. This object can be no larger than 3 feet on a side and weigh no more than 10 pounds, and its form must be that of a nonmagical object that you have seen. The object is visibly magical, radiating dim light out to 5 feet.";
+        minorConjuration.recharge = "None";
+        minorConjuration.spellLevel = 0;
+        minorConjuration.requiredLevel = 2;
+        conjuration.subclassAbilityList.add(minorConjuration);
+
+        Ability benignTeleport = null;
+        benignTeleport.name = "Benign Teleport";
+        benignTeleport.actionType = "Action";
+        benignTeleport.description = "Starting at 6th level, you can use your action to teleport up to 30 feet to an unoccupied space that you can see. Alternatively, you can choose a space within range that is occupied by a Small or Medium creature. If that creature is willing, you both teleport, swapping places.";
+        benignTeleport.recharge = "Long";
+        benignTeleport.spellLevel = 0;
+        benignTeleport.requiredLevel = 6;
+        conjuration.subclassAbilityList.add(benignTeleport);
+
+        wizardSubClassList.add(conjuration);
+
+        SubClass divination = null;
+        divination.name = "Divination";
+        divination.parentName = "Wizard";
+
+        Ability portent = null;
+        portent.name = "Portent";
+        portent.actionType = "Free";
+        portent.description = "Starting at 2nd level when you choose this school, glimpses of the future begin to press in on your awareness. When you finish a long rest, roll two d20s and record the numbers rolled. You can replace any attack roll, saving throw, or ability check made by you or a creature that you can see with one of these foretelling rolls. You must choose to do so before the roll, and you can replace a roll in this way only once per turn.";
+        portent.recharge = "Turn";
+        portent.spellLevel = 0;
+        portent.requiredLevel = 2;
+        divination.subclassAbilityList.add(portent);
+
+        Ability theThirdEye = null;
+        theThirdEye.name = "The Third Eye";
+        theThirdEye.actionType = "Action";
+        theThirdEye.description = "Starting at 10th level, you can use your action to increase your powers of perception.";
+        theThirdEye.recharge = "Short";
+        theThirdEye.spellLevel = 0;
+        theThirdEye.requiredLevel = 10;
+        divination.subclassAbilityList.add(theThirdEye);
+
+        wizardSubClassList.add(divination);
+
+        SubClass enchantment = null;
+        enchantment.name = "Enchantment";
+        enchantment.parentName = "Wizard";
+
+        Ability hypnoticGaze = null;
+        hypnoticGaze.name = "Hypnotic Gaze";
+        hypnoticGaze.actionType = "Action";
+        hypnoticGaze.description = "Starting at 2nd level when you choose this school, your soft words and enchanting gaze can magically enthrall another creature. As an action, choose one creature that you can see within 5 feet of you. If the target can see or hear you, it must succeed on a Wisdom saving throw against your wizard spell save DC or be charmed by you until the end of your next turn. The charmed creature's speed drops to 0, and the creature is incapacitated and visibly dazed.";
+        hypnoticGaze.recharge = "Turn";
+        hypnoticGaze.spellLevel = 0;
+        hypnoticGaze.requiredLevel = 2;
+        enchantment.subclassAbilityList.add(hypnoticGaze);
+
+        Ability instinctiveCharm = null;
+        instinctiveCharm.name = "Instinctive Charm";
+        instinctiveCharm.actionType = "Reaction";
+        instinctiveCharm.description = "Beginning at 6th level, when a creature you can see within 30 feet of you makes an attack roll against you, you can use your reaction to divert the attack, provided that another creature is within the attack's range. The attacker must make a Wisdom saving throw against your wizard spell save DC. On a failed save, the attacker must target the creature that is closest to it, not including you or itself. If multiple creatures are closest, the attacker chooses which one to target. On a successful save, you can't use this feature on the attacker again until you finish a long rest.";
+        instinctiveCharm.recharge = "None";
+        instinctiveCharm.spellLevel = 0;
+        instinctiveCharm.requiredLevel = 6;
+        enchantment.subclassAbilityList.add(instinctiveCharm);
+
+        Ability alterMemories = null;
+        alterMemories.name = "Alter Memories";
+        alterMemories.actionType = "Action";
+        alterMemories.description = "Additionally, once before the spell expires, you can use your action to try to make the chosen creature forget some of the time it spent charmed. The creature must succeed on an Intelligence saving throw against your wizard spell save DC or lose a number of hours of its memories equal to 1 + your Charisma modifier (minimum of 1). You can make the creature forget less time, and the amount of time can't exceed the duration of your enchantment spell.";
+        alterMemories.recharge = "None";
+        alterMemories.spellLevel = 0;
+        alterMemories.requiredLevel = 14;
+        enchantment.subclassAbilityList.add(alterMemories);
+
+        wizardSubClassList.add(enchantment);
+
+        SubClass evocation = null;
+        evocation.name = "Evocation";
+        evocation.parentName = "Wizard";
+
+        Ability sculptSpells = null;
+        sculptSpells.name = "Sculpt Spells";
+        sculptSpells.actionType = "Free";
+        sculptSpells.description = "Beginning at 2nd level, you can create pockets of relative safety within the effects of your evocation spells. When you cast an evocation spell that affects other creatures that you can see, you can choose a number of them equal to 1 + the spell's level. The chosen creatures automatically succeed on their saving throws against the spell, and they take no damage if they would normally take half damage on a successful save.";
+        sculptSpells.recharge = "None";
+        sculptSpells.spellLevel = 0;
+        sculptSpells.requiredLevel = 2;
+        evocation.subclassAbilityList.add(sculptSpells);
+
+        wizardSubClassList.add(evocation);
+
+        SubClass graviturgy = null;
+        graviturgy.name = "Graviturgy";
+        graviturgy.parentName = "Wizard";
+
+        Ability adjustDensity = null;
+        adjustDensity.name = "Adjust Density";
+        adjustDensity.actionType = "Action";
+        adjustDensity.description = "As an action, you can magically alter the weight of one object or creature you can see within 30 feet of you. The object or creature must be Large or smaller. The target's weight is halved or doubled for up to 1 minute or until your concentration ends (as if you were concentrating on a spell).";
+        adjustDensity.recharge = "None";
+        adjustDensity.spellLevel = 0;
+        adjustDensity.requiredLevel = 2;
+        graviturgy.subclassAbilityList.add(adjustDensity);
+
+        Ability gravityWell = null;
+        gravityWell.name = "Gravity Well";
+        gravityWell.actionType = "Free";
+        gravityWell.description = "You've learned how to manipulate gravity around a living being: whenever you cast a spell on a creature, you can move the target 5 feet to an unoccupied space of your choice if the target is willing to move, the spell hits it with an attack, or it fails a saving throw against the spell.";
+        gravityWell.recharge = "None";
+        gravityWell.spellLevel = 0;
+        gravityWell.requiredLevel = 6;
+        graviturgy.subclassAbilityList.add(gravityWell);
+
+        Ability violentAttraction = null;
+        violentAttraction.name = "Violent Attraction";
+        violentAttraction.actionType = "Reaction";
+        violentAttraction.description = "When another creature that you can see within 60 feet of you hits with a weapon attack, you can use your reaction to increase the attack's velocity, causing the attack's target to take an extra 1d10 damage of the weapon's type. Alternatively, if a creature within 60 feet of you takes damage from a fall, you can use your reaction to increase the fall's damage by 2d10.";
+        violentAttraction.recharge = "None";
+        violentAttraction.spellLevel = 0;
+        violentAttraction.requiredLevel = 10;
+        graviturgy.subclassAbilityList.add(violentAttraction);
+
+        Ability eventHorizon = null;
+        eventHorizon.name = "Event Horizon";
+        eventHorizon.actionType = "Action";
+        eventHorizon.description = "As an action, you can magically emit a powerful field of gravitational energy that tugs at other creatures for up to 1 minute or until your concentration ends (as if you were concentrating on a spell). For the duration, whenever a creature hostile to you starts its turn within 30 feet of you, it must make a Strength saving throw against your spell save DC. On a failed save, it takes 2d10 force damage, and its speed is reduced to 0 until the start of its next turn. On a successful save, it takes half as much damage, and every foot it moves this turn costs 2 extra feet of movement.";
+        eventHorizon.recharge = "Long";
+        eventHorizon.spellLevel = 0;
+        eventHorizon.requiredLevel = 14;
+        graviturgy.subclassAbilityList.add(eventHorizon);
+
+        wizardSubClassList.add(graviturgy);
+
+        SubClass illusion = null;
+        illusion.name = "Illusion";
+        illusion.parentName = "Wizard";
+
+        Ability malleableIllusions = null;
+        malleableIllusions.name = "Malleable Illusions";
+        malleableIllusions.actionType = "Action";
+        malleableIllusions.description = "Starting at 6th level, when you cast an illusion spell that has a duration of 1 minute or longer, you can use your action to change the nature of that illusion (using the spell's normal parameters for the illusion), provided that you can see the illusion.";
+        malleableIllusions.recharge = "None";
+        malleableIllusions.spellLevel = 0;
+        malleableIllusions.requiredLevel = 6;
+        illusion.subclassAbilityList.add(malleableIllusions);
+
+        Ability illusoryStep = null;
+        illusoryStep.name = "Illusory Step";
+        illusoryStep.actionType = "Reaction";
+        illusoryStep.description = "Beginning at 10th level, you can create an illusory duplicate of yourself as an instant, almost instinctual reaction to danger. When a creature makes an attack roll against you, you can use your reaction to interpose the illusory duplicate between the attacker and yourself. The attack automatically misses you, then the illusion dissipates.";
+        illusoryStep.recharge = "Short";
+        illusoryStep.spellLevel = 0;
+        illusoryStep.requiredLevel = 10;
+        illusion.subclassAbilityList.add(illusoryStep);
+
+        Ability illusoryReality = null;
+        illusoryReality.name = "Illusory Reality";
+        illusoryReality.actionType = "Bonus";
+        illusoryReality.description = "By 14th level, you have learned the secret of weaving shadow magic into your illusions to give them a semireality. When you cast an illusion spell of 1st level or higher, you can choose one inanimate, nonmagical object that is part of the illusion and make that object real. You can do this on your turn as a bonus action while the spell is ongoing. The object remains real for 1 minute. For example, you can create an illusion of a bridge over a chasm and then make it real long enough for your allies to cross.";
+        illusoryReality.recharge = "None";
+        illusoryReality.spellLevel = 0;
+        illusoryReality.requiredLevel = 14;
+        illusion.subclassAbilityList.add(illusoryReality);
+
+        wizardSubClassList.add(illusion);
+
+        SubClass necromancy = null;
+        necromancy.name = "Necromancy";
+        necromancy.parentName = "Wizard";
+
+        Ability grimHarvest = null;
+        grimHarvest.name = "Grim Harvest";
+        grimHarvest.actionType = "Free";
+        grimHarvest.description = "At 2nd level, you gain the ability to reap life energy from creatures you kill with your spells. Once per turn when you kill one or more creatures with a spell of 1st level or higher, you regain hit points equal to twice the spell's level, or three times its level if the spell belongs to the School of Necromancy. You don't gain this benefit for killing constructs or undead.";
+        grimHarvest.recharge = "Turn";
+        grimHarvest.spellLevel = 0;
+        grimHarvest.requiredLevel = 2;
+        necromancy.subclassAbilityList.add(grimHarvest);
+
+        Ability commandUndead = null;
+        commandUndead.name = "Command Undead";
+        commandUndead.actionType = "Action";
+        commandUndead.description = "Starting at 14th level, you can use magic to bring undead under your control, even those created by other wizards. As an action, you can choose one undead that you can see within 60 feet of you. That creature must make a Charisma saving throw against your wizard spell save DC. If it succeeds, you can't use this feature on it again. If it fails, it becomes friendly to you and obeys your commands until you use this feature again.";
+        commandUndead.recharge = "None";
+        commandUndead.spellLevel = 0;
+        commandUndead.requiredLevel = 14;
+        necromancy.subclassAbilityList.add(commandUndead);
+
+        wizardSubClassList.add(necromancy);
+
+        SubClass transmutation = null;
+        transmutation.name = "Transmutation";
+        transmutation.parentName = "Wizard";
+
+        Ability shapechanger = null;
+        shapechanger.name = "Shapechanger";
+        shapechanger.actionType = "Action";
+        shapechanger.description = "At 10th level, you add the polymorph spell to your spellbook, if it is not there already. You can cast polymorph without expending a spell slot. When you do so, you can target only yourself and transform into a beast whose challenge rating is 1 or lower.";
+        shapechanger.recharge = "Short";
+        shapechanger.spellLevel = 0;
+        shapechanger.requiredLevel = 10;
+        transmutation.subclassAbilityList.add(shapechanger);
+
+        Ability masterTransmuter = null;
+        masterTransmuter.name = "Master Transmuter";
+        masterTransmuter.actionType = "Action";
+        masterTransmuter.description = "Starting at 14th level, you can use your action to consume the reserve of transmutation magic stored within your transmuter's stone in a single burst. Your transmuter's stone is destroyed and can't be remade until you finish a long rest.";
+        masterTransmuter.recharge = "Long";
+        masterTransmuter.spellLevel = 0;
+        masterTransmuter.requiredLevel = 14;
+        transmutation.subclassAbilityList.add(masterTransmuter);
+
+        wizardSubClassList.add(transmutation);
+
+        SubClass war = null;
+        war.name = "War";
+        war.parentName = "Wizard";
+
+        Ability arcaneDeflection = null;
+        arcaneDeflection.name = "Arcane Deflection";
+        arcaneDeflection.actionType = "Reaction";
+        arcaneDeflection.description = "At 2nd level, you have learned to weave your magic to fortify yourself against harm. When you are hit by an attack or you fail a saving throw, you can use your reaction to gain a +2 bonus to your AC against that attack or a +4 bonus to that saving throw.";
+        arcaneDeflection.recharge = "Turn";
+        arcaneDeflection.spellLevel = 0;
+        arcaneDeflection.requiredLevel = 2;
+        war.subclassAbilityList.add(arcaneDeflection);
+
+        Ability powerSurge = null;
+        powerSurge.name = "Power Surge";
+        powerSurge.actionType = "Free";
+        powerSurge.description = "Once per turn when you deal damage to a creature or object with a wizard spell, you can spend one power surge to deal extra force damage to that target. The extra damage equals half your wizard level.";
+        powerSurge.recharge = "Turn";
+        powerSurge.spellLevel = 0;
+        powerSurge.requiredLevel = 6;
+        war.subclassAbilityList.add(powerSurge);
+
+        wizardSubClassList.add(war);
+
+        return wizardSubClassList;
+    }
 }
