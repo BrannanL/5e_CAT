@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FeatSelect">
+
+    <TextView
+        android:id="@+id/featSelectTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:layout_marginBottom="32dp"
+        android:text="@string/feat_select_text"
+        android:textColor="#660404"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="409dp"
+        android:layout_height="654dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/featSelectTextView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <Button
+                android:id="@+id/aberrantDragonmarkButton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/aberrant_dragonmark" />
+
+            <Button
+                android:id="@+id/actorButton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/actor" />
+
+            <Button
+                android:id="@+id/alertButton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/alert" />
+
+            <Button
+                android:id="@+id/athleteButton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/athlete" />
+
+            <Button
+                android:id="@+id/bountifulLuckButton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/bountiful_luck" />
+
+            <Button
+                android:id="@+id/chargerButton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/charger" />
+
+            <Button
+                android:id="@+id/crossbowExpertButton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/crossbow_expert" />
+
+            <Button
+                android:id="@+id/defensiveDuelistButton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/defensive_duelist" />
+
+            <Button
+                android:id="@+id/dragonFearButton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/dragon_fear" />
+
+            <Button
+                android:id="@+id/dragonHideButton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/dragon_hide" />
+
+            <Button
+                android:id="@+id/drowHighMagicButton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/drow_high_magic" />
+
+            <Button
+                android:id="@+id/dualWielderButton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/dual_wielder" />
+
+            <Button
+                android:id="@+id/dungeonDelverButton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/dungeon_delver" />
+
+            <Button
+                android:id="@+id/durableButton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/durable" />
+
+            <Button
+                android:id="@+id/dwarvenFortitude"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/dwarven_fortitude" />
+
+            <Button
+                android:id="@+id/elementalAdeptButton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/elemental_adept" />
+
+            <Button
+                android:id="@+id/elvenAccuracyButton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/elven_accuracy" />
+
+            <Button
+                android:id="@+id/fadeAwayButton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/fade_away" />
+
+            <Button
+                android:id="@+id/feyTeleportationButton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/fey_teleportation" />
+
+            <Button
+                android:id="@+id/flamesOfPhlegethosButton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/flames_phlegethos" />
+
+            <Button
+                android:id="@+id/grapplerButton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/grappler" />
+
+            <Button
+                android:id="@+id/greatWeaponMasterButton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/great_weapon_master" />
+
+            <Button
+                android:id="@+id/healerButton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/healer" />
+
+            <Button
+                android:id="@+id/heaviilyArmoredButton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/heavily_armored" />
+
+            <Button
+                android:id="@+id/heavyArmorMasterButton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/heavy_armor_master" />
+
+            <Button
+                android:id="@+id/infernalConstitutionButton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/infernal_constitution" />
+            <Button
+                android:id="@+id/inspiringLeaderButton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/inspiring_leader" />
+
+            <Button
+                android:id="@+id/keenMindButton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/keen_mind" />
+
+            <Button
+                android:id="@+id/lightlyArmored"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/lightly_armored" />
+
+            <Button
+                android:id="@+id/linguistButton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/linguist" />
+
+            <Button
+                android:id="@+id/luckyButton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/lucky" />
+
+            <Button
+                android:id="@+id/mageSlayerButton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/mage_slayer" />
+
+            <Button
+                android:id="@+id/magicInitiateButton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/magic_initiate" />
+
+            <Button
+                android:id="@+id/martialAdeptButton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/martial_adept" />
+
+            <Button
+                android:id="@+id/mediumArmorMasterButton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/medium_armor_master" />
+
+            <Button
+                android:id="@+id/mobileButton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/mobile" />
+
+            <Button
+                android:id="@+id/moderatelyArmoredButton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/moderately_armored" />
+
+            <Button
+                android:id="@+id/mountedCombatantButton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/mounted_combatant" />
+
+            <Button
+                android:id="@+id/observantButton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/observant" />
+
+            <Button
+                android:id="@+id/orcishFuryButton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/orcish_fury" />
+
+            <Button
+                android:id="@+id/polearmMasterButton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/polearm_master" />
+
+            <Button
+                android:id="@+id/prodigyButton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/prodigy" />
+
+            <Button
+                android:id="@+id/resilientButton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/resilient" />
+
+            <Button
+                android:id="@+id/revenantBladeButton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/revenant_blade" />
+
+            <Button
+                android:id="@+id/ritualCasterButton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/ritual_caster" />
+
+            <Button
+                android:id="@+id/savageAttackerButton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/savage_attacker" />
+
+            <Button
+                android:id="@+id/secondChanceButton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/second_chance" />
+
+            <Button
+                android:id="@+id/sentinelButton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/sentinel" />
+
+            <Button
+                android:id="@+id/sharpshooterButton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/sharpshooter" />
+
+            <Button
+                android:id="@+id/shieldMasterButton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/shield_master" />
+
+            <Button
+                android:id="@+id/skilledButton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/skilled" />
+
+            <Button
+                android:id="@+id/skulkerButton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/skulker" />
+
+            <Button
+                android:id="@+id/spellSniperButton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/spell_sniper" />
+
+            <Button
+                android:id="@+id/squatNimblenessButton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/squat_nimbleness" />
+
+            <Button
+                android:id="@+id/svirfneblinMagicButton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/svirfneblin_magic" />
+
+            <Button
+                android:id="@+id/tavernBrawlerButton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/tavern_brawler" />
+
+            <Button
+                android:id="@+id/toughButton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/tough" />
+
+            <Button
+                android:id="@+id/warCasterButton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/war_caster" />
+
+            <Button
+                android:id="@+id/weaponMasterButton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/weapon_master" />
+
+            <Button
+                android:id="@+id/woodElfMagicButton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/wood_elf_magic" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

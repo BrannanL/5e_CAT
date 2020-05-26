@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.a5eturntracker"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="28" />
+
+    <application
+        android:allowBackup="true"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:debuggable="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity android:name="com.example.a5eturntracker.WizardSubclass" />
+        <activity android:name="com.example.a5eturntracker.WarlockSubclass" />
+        <activity android:name="com.example.a5eturntracker.SorcererSubclass" />
+        <activity android:name="com.example.a5eturntracker.RogueSubclass" />
+        <activity android:name="com.example.a5eturntracker.RangerSubclass" />
+        <activity android:name="com.example.a5eturntracker.PaladinSubclass" />
+        <activity android:name="com.example.a5eturntracker.MonkSubclass" />
+        <activity android:name="com.example.a5eturntracker.FighterSubclass" />
+        <activity android:name="com.example.a5eturntracker.DruidSubclass" />
+        <activity android:name="com.example.a5eturntracker.ClericSubclass" />
+        <activity android:name="com.example.a5eturntracker.BardSubclass" />
+        <activity android:name="com.example.a5eturntracker.BarbarianSubclass" />
+        <activity android:name="com.example.a5eturntracker.SpellSelect" />
+        <activity android:name="com.example.a5eturntracker.FeatSelect" />
+        <activity android:name="com.example.a5eturntracker.MainActivity" />
+        <activity android:name="com.example.a5eturntracker.SubclassSelect" />
+        <activity android:name="com.example.a5eturntracker.raceSelect" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

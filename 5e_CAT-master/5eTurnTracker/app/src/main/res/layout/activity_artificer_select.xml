@@ -1,0 +1,633 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SubclassSelect">
+
+
+    <TextView
+        android:id="@+id/subclassSelectText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="32dp"
+        android:text="@string/subclass_select_text"
+        android:textColor="#660404"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/subclassSelectScrollView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/subclassSelectScrollView"
+        android:layout_width="409dp"
+        android:layout_height="656dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/subclassSelectText">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/artificerInSubList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Artificer Specialty" />
+
+            <Button
+                android:id="@+id/alchemistButton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/alchemist" />
+
+            <Button
+                android:id="@+id/artilleristButton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/artillerist" />
+
+
+        <Button
+            android:id="@+id/battleSmithButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/battle_smith" />
+
+            <TextView
+                android:id="@+id/barbarianInSubList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Barbarian Primal Paths" />
+        <Button
+            android:id="@+id/ancestralGuardianButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/ancestral_guardian" />
+        <Button
+            android:id="@+id/battleragerButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/battlerager" />
+        <Button
+            android:id="@+id/berserkerButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/berserker" />
+        <Button
+            android:id="@+id/stormHeraldButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/storm_harald" />
+        <Button
+            android:id="@+id/totemWarriorButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/totem_warrior" />
+        <Button
+            android:id="@+id/zealotButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/zealot" />
+
+        <TextView
+            android:id="@+id/bardInSubList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bard College" />
+        <Button
+            android:id="@+id/glamourButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/glamour" />
+        <Button
+            android:id="@+id/loreButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/lore" />
+        <Button
+            android:id="@+id/swordsButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/swords" />
+        <Button
+            android:id="@+id/valorButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/valor" />
+        <Button
+            android:id="@+id/whispersButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/whispers" />
+
+        <TextView
+            android:id="@+id/clericInSubList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cleric Domain" />
+        <Button
+            android:id="@+id/arcanaButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/arcana" />
+        <Button
+            android:id="@+id/deathButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/death" />
+        <Button
+            android:id="@+id/forgeButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/forge" />
+        <Button
+            android:id="@+id/graveButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/grave" />
+        <Button
+            android:id="@+id/knowledgeButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/knowledge" />
+        <Button
+            android:id="@+id/lifeButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/life" />
+        <Button
+            android:id="@+id/lightButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/light" />
+        <Button
+            android:id="@+id/natureButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/nature" />
+        <Button
+            android:id="@+id/orderButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/order" />
+        <Button
+            android:id="@+id/tempestButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/tempest" />
+        <Button
+            android:id="@+id/trickeryButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/trickery" />
+        <Button
+            android:id="@+id/warButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/war" />
+
+        <TextView
+            android:id="@+id/druidInSubList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Druid Circle" />
+        <Button
+            android:id="@+id/dreamsButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/dreams" />
+        <Button
+            android:id="@+id/landButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/land" />
+        <Button
+            android:id="@+id/moonButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/moon" />
+        <Button
+            android:id="@+id/shepardButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/shepard" />
+        <Button
+            android:id="@+id/sporesButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/spores" />
+
+        <TextView
+            android:id="@+id/fighterInSubList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fighter Martial Archetype" />
+        <Button
+            android:id="@+id/arcaneArcherButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/arcane_archer" />
+        <Button
+            android:id="@+id/battleMasterButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/battle_master" />
+        <Button
+            android:id="@+id/cavalierButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/cavalier" />
+        <Button
+            android:id="@+id/championButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/champion" />
+        <Button
+            android:id="@+id/eldritchKnightButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/eldritch_knight" />
+        <Button
+            android:id="@+id/purpleDragonKnightButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/purple_dragon_knight" />
+        <Button
+            android:id="@+id/samuraiButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/samurai" />
+
+        <TextView
+            android:id="@+id/monkInSubList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Monk Monastic Tradition" />
+        <Button
+            android:id="@+id/drunkenMasterButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/drunken_master" />
+        <Button
+            android:id="@+id/fourElementsButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/four_elements" />
+        <Button
+            android:id="@+id/kenseiButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/kensei" />
+        <Button
+            android:id="@+id/longDeathButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/long_death" />
+        <Button
+            android:id="@+id/openHandButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/open_hand" />
+        <Button
+            android:id="@+id/shadowButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/shadow" />
+        <Button
+            android:id="@+id/sunSoulButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/sun_soul" />
+
+        <TextView
+            android:id="@+id/paladinInSubList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Paladin Sacred Oath" />
+        <Button
+            android:id="@+id/ancientsButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/ancients" />
+        <Button
+            android:id="@+id/conquestButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/conquest" />
+        <Button
+            android:id="@+id/crownButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/crown" />
+        <Button
+            android:id="@+id/devotion"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/devotion" />
+        <Button
+            android:id="@+id/oathbreakerButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/oathbreaker" />
+        <Button
+            android:id="@+id/redemptionButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/redemption" />
+        <Button
+            android:id="@+id/vengeanceButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/vengeance" />
+
+        <TextView
+            android:id="@+id/rangerInSubList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ranger Archetype" />
+        <Button
+            android:id="@+id/beastMasterButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/beast_master" />
+        <Button
+            android:id="@+id/gloomStalkerButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/gloom_stalker" />
+        <Button
+            android:id="@+id/horizonWalkerButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/horizon_walker" />
+        <Button
+            android:id="@+id/hunterButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/hunter" />
+        <Button
+            android:id="@+id/monsterSlayerButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/monster_slayer" />
+
+        <TextView
+            android:id="@+id/rogueInSubList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Roguish Archetype" />
+        <Button
+            android:id="@+id/arcaneTricksterButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/arcane_trickster" />
+        <Button
+            android:id="@+id/assassinButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/assassin" />
+        <Button
+            android:id="@+id/inquisitiveButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/inquisitive" />
+        <Button
+            android:id="@+id/mastermindButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/mastermind" />
+        <Button
+            android:id="@+id/scoutButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/scout" />
+        <Button
+            android:id="@+id/swashbucklerButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/swashbuckler" />
+        <Button
+            android:id="@+id/thiefButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/thief" />
+
+        <TextView
+            android:id="@+id/sorcererInSubList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sorcerous Origin" />
+        <Button
+            android:id="@+id/divineSoulButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/divine_soul" />
+        <Button
+            android:id="@+id/draconicButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/draconic" />
+        <Button
+            android:id="@+id/shadowSorcButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/sorc_shadow" />
+        <Button
+            android:id="@+id/stormButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/storm" />
+        <Button
+            android:id="@+id/wildButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/wild" />
+
+            <TextView
+                android:id="@+id/warlockInSubList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Warlock Otherworldly Patron" />
+            <Button
+                android:id="@+id/archfeyButton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/archfey" />
+            <Button
+                android:id="@+id/celestialButton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/celestial" />
+            <Button
+                android:id="@+id/fiendButton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/fiend" />
+            <Button
+                android:id="@+id/greatOldOneButton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/great_old_one" />
+            <Button
+                android:id="@+id/hexbladeButton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/hexblade" />
+            <Button
+                android:id="@+id/undyingButton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/undying" />
+
+        <TextView
+            android:id="@+id/wizardInSubList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Wizard Arcane Traditioni" />
+        <Button
+            android:id="@+id/abjurationButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/abjuration" />
+        <Button
+            android:id="@+id/bladesingingButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/bladesinging" />
+        <Button
+            android:id="@+id/conjurationButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/conjuration" />
+        <Button
+            android:id="@+id/divinationButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/divination" />
+        <Button
+            android:id="@+id/enchantmentButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/enchantment" />
+        <Button
+            android:id="@+id/evocationButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/evocation" />
+        <Button
+            android:id="@+id/illusionButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/necromancy" />
+            <Button
+                android:id="@+id/necromancyButton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/necromancy" />
+        <Button
+            android:id="@+id/transmutationButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/transmutation" />
+        <Button
+            android:id="@+id/warMagicButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/war_magic" />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
